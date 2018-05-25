@@ -1,5 +1,5 @@
 var substringMatcher = function(strs) {
-  return function findMatches(q, null, cb2) {
+  return function findMatches(q, cb, cb2) {
     $.ajax({
       url: "http://api.icndb.com/jokes/random",
       jsonp: "callback",
